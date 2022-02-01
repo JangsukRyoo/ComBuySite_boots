@@ -10,10 +10,7 @@ spring:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
-      
-  jmx:
-    default-domain: www.extrus.net
-    
+
   jpa:
     hibernate:
       ddl-auto: update
