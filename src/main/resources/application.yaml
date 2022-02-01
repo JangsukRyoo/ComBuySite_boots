@@ -1,0 +1,36 @@
+# properteis --> yaml
+
+server:
+
+  port: 8080 #
+    
+spring:
+  mvc:
+    
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+  jmx:
+    default-domain: www.extrus.net
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate: 
+        show_sql: false 
+    
+  datasource:
+    driver-class-name: com
+    url: jdbc:mysql://localhost:3306/gate_coSntrol?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: latte
+    password: 11111111
+
+qr:
+    keyPath: src/main/webapp/decryptKey/public.key
+    size : 470
+    validT : 120
+    decKeyPath : src/main/webapp/decryptKey/private.key
+
+  
